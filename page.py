@@ -12,9 +12,11 @@
 from collections import OrderedDict
 import json
 import sys
-from baka import log
+import logging
 from .event import Event
 from .util import Api, to_json
+
+log = logging.getLogger(__name__)
 
 HEADERS = {'Content-type': 'application/json'}
 OK = 200
